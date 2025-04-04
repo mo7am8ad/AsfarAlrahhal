@@ -1,0 +1,243 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  padding: 22px 55px;
+  background-color: #083C5D;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+.logo-container{
+  width: 55px;
+  height: 55px;
+}
+.logo-container img{
+  width: 100%;
+  height: 100%;
+  
+}
+.navbar-pages-list{
+  display: flex;
+  justify-content: start;
+  list-style: none;
+  width: 1200px;
+  height: 25px;
+  gap: 50px;
+}
+.navbar-tab{
+  height: 100%;
+}
+  .navbar-tab.active{
+    height: 100%;
+    border-bottom: 2px solid #FFFFFF
+  }
+  .navbar-tab.active{
+    height: 100%;
+    border-bottom: 2px solid #FFFFFF
+  }
+.navbar-butoon{
+  width: 180px;
+  height: 44px;
+  border-radius: 50px;
+  border-style: none;
+ 
+  
+}
+
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-toggle img {
+  width: 34px;
+  height: 34px;
+}
+
+.Languagedropdown-menu{
+  position: absolute;
+  top: 25px;
+  left: -52px;
+  background-color:#7DABC7;
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 140px;
+  padding: 15px ;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.Languagedropdown-menu li {
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 8px;
+  transition:transform 0.1s ease;
+}
+
+.Languagedropdown-menu li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.Languagedropdown-menu li:hover{
+  background-color:#5b86a0;
+}
+.Languagedropdown-menu li:active{
+    transform: scale(0.95);
+}
+
+
+
+@media (max-width: 500px){
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width:  100%;
+    padding: 10px 15px 10px 15px;
+    box-sizing: border-box;
+    background-color: #083c5d;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    
+  }
+  .logo-container{
+    width: 34px;
+    height: 34px;
+  }
+  .logo-container img{
+    width: 100%;
+    height: 100%;
+    
+  }
+  .navbar-pages-list {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #083c5d;
+    padding: 10px;
+    border-radius: 12px;
+    z-index: 10;
+  }
+  .navbar-pages-list.show {
+    position: relative;    
+    display: flex;
+    flex-direction: column;
+    top: 205px; /* Adjust based on navbar height */
+    left: 80px;
+    width: 200px;
+    height: 320px;
+  }
+  .nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .navbar-tab{
+    height: 100%;
+    
+  }
+    .navbar-tab.active{
+      height: 100%;
+      border-bottom: 2px solid #FFFFFF
+    }
+    .navbar-tab.active{
+      height: 100%;
+      border-bottom: 2px solid #FFFFFF
+    }
+  
+  
+  .language-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+  }
+  
+  .dropdown-toggle img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .Languagedropdown-menu{
+    position: relative;
+    top: 70px;
+    left: 0px;
+    background-color:#7DABC7;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 140px;
+    padding: 15px ;
+    box-sizing: border-box;
+    list-style: none;
+  }
+  
+  .Languagedropdown-menu li {
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+    transition:transform 0.1s ease;
+  }
+  
+  .Languagedropdown-menu li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  
+  .Languagedropdown-menu li:hover{
+    background-color:#5b86a0;
+  }
+  .Languagedropdown-menu li:active{
+      transform: scale(0.95);
+  }
+  .MenuAndLangContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 500px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .navbar-pages-list {
+    display: flex;
+  }
+}
+
+

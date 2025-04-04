@@ -1,0 +1,33 @@
+.CreateInvoiceContianer{
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  gap: 15px;
+}
+  .CreateInvoiceContianer > input{
+    height: 32px;
+    border-radius: 6px;
+    border: solid 1px #adacac;
+    padding-right: 10px;
+  }
+  .CreateInvoiceContianer > button{
+    width: 220px;
+    height: 40px;
+    background-color: #083C5D;
+    border-radius: 4px;
+  }
+
+  .GeneratedLinkDiv > div{
+    display: flex;
+    gap: 15px;
+  }
+  .GeneratedLinkDiv >div> button{
+    width: 100px;
+    height: 35px;
+    background-color: #083C5D;
+    border-radius: 4px;
+  }
+  .CreateInvoiceContianer a{
+    color: rgb(24, 139, 255);
+    align-self: center;
+  }

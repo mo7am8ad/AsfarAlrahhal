@@ -1,0 +1,45 @@
+.ManageHotelsContianer{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+} 
+  .ManageHotelsContianer >table{
+    border-spacing: 0 10px;
+    gap: 50px;
+  }
+    .ManageHotelsContianer >table >thead{
+      
+    } 
+      .ManageHotelsContianer >table >thead >tr{
+        border-bottom: 1px solid black;      
+      }
+        .ManageHotelsContianer >table >thead >tr>th{
+          text-align: start;
+          font-size: 20px;
+          color:#083C5D;
+        }
+    .ManageHotelsContianer >table>tbody>tr> td{
+      color:black;
+    }
+      .EditDeleteColumn{
+        display: flex;
+        gap: 15px;
+      }
+      .ManageHotelsContianer >table>tbody>tr> td > a{
+        color:#7dabc7;
+        text-decoration:none;
+        align-self: center;    
+      }
+      .ManageHotelsContianer >table>tbody>tr> td > button{
+        color: white;
+        font-size: 14px;
+        background-color: red;
+        border-radius: 6px;
+        width: 45px;
+        height: 25px;
+      }
+
+  .ManageHotelsContianer  a{
+    color:rgb(24, 139, 255);
+    text-decoration:underline
+  }

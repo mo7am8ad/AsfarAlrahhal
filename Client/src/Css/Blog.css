@@ -1,0 +1,374 @@
+.SingleBlogPage{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+  .SingleBlogPageUpper{
+    display: flex;
+    flex-direction: row;
+  }
+    .SingleBlogContianer{
+      width: 60%;
+      background-color: #F8F8FA;
+      padding: 55px 28px 55px 60px;
+    }
+      .SingleBlogUpperPart{
+        width: 100%;
+        position: relative;
+      }
+        .SingleBLogImageContainer{
+          width: 100%;
+          height: 500px;
+        }
+          .SingleBLogImageContainer > img{
+            width: 100%;
+            height: 500px;
+          }
+
+        .SingleBlogHeaderContianer{
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          padding: 25px 20px;
+          box-sizing: border-box;
+          background: #bcbcbc54; /* Semi-transparent background */
+          backdrop-filter: blur(10px); /* Blur effect */
+          -webkit-backdrop-filter: blur(10px); /* For Safari support */
+
+        }
+          .SingleBlogCatigory{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #083C5D;
+            height: 28px;
+            width: 60px;
+            border-radius: 4px;
+          }
+            .SingleBlogCatigory > p{
+              color: white;
+              line-height: px;
+              margin: 0;
+              padding: 0;
+              align-content: center;
+            }
+          
+          .SingleBlogHeaderContianer > h1{
+            font-family: cairo;
+            line-height: 35px;
+          }
+          .SingleBlogHeaderContianer > p{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.44px;
+            color: white;
+          }
+
+      .SingleBlogContentContianer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 50px;
+        padding-bottom: 25px;
+
+      }
+        .SingleBlogIntroContainer{
+          display: flex;
+          gap: 8px;
+        }
+          .SingleBlogIntroContainer > img{
+            height: 15px;
+            margin-top: 5px;
+          }
+          .SingleBlogIntroContainer > h1{
+            font-family: cairo;
+            color: black;
+            font-size: 17px;
+            font-weight: 700;
+          }
+        
+        .SingleBlogContentFirstSection{
+
+        }
+          .SingleBlogContentFirstSection > p{
+            font-family: Cairo;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #1B1B1F;
+          }
+
+        .SingleBlogContentSecondSection{
+
+        }
+          .SingleBlogContentSecondSection > p{
+            font-family: Cairo;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #1B1B1F;
+          }
+
+    .OtherBlogsContinaer{
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 50px;
+    }
+  
+  .SingleBlogContactUsContainer{
+    width: 60%;
+    align-self: center;
+    background-color: #083C5D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+    border-radius: 18px;
+    box-shadow: 5px 5px 25px 0px #00000033;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+    .SingleBlogContactUsContainer >h1{
+      color: white;
+    }
+    .SingleBlogContactUsContainer >p{
+      color: white;
+    }
+    .SingleBlogContactUsContainer > button{
+      background-color: #7DABC7;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 400;
+    }
+
+  .SingleBlogHotelCardsContianer{
+    width: 95%;
+    align-self: center;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    background-color: #F8F8FA;
+    padding: 30px 0px 30px 0px;
+    margin-bottom: 50px;
+  }
+    .SingleBlogHotelCardsContianer > h1{
+      color:#083C5D;
+    }
+    .HotelCardsContainerAtSingleBlogPage{
+      display: flex;
+      width:100%;
+      flex-direction: row;
+      justify-content: center;
+      gap: 25px;
+    }
+
+@media (max-width: 500px){
+  .SingleBlogPage{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+    .SingleBlogPageUpper{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+      .SingleBlogContianer{
+        background-color: #F8F8FA;
+        padding:0px;
+        padding-bottom: 30px;
+        width: 100%;
+        margin-left: -40px;
+        margin-right: -40px;
+        margin-top: -25px;
+        width: calc(100% + 80px); /* Compensates for removed padding */
+      }
+        .SingleBlogContianer > hr{
+          width: 80%;
+        }
+        .SingleBlogUpperPart{
+          width: 100%;
+          position: relative;
+        }
+          .SingleBLogImageContainer{
+            width: 100%;
+            height: 300px;
+          }
+            .SingleBLogImageContainer > img{
+              width: 100%;
+              height: 300px;
+            }
+  
+          .SingleBlogHeaderContianer{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 15px 20px;
+            box-sizing: border-box;
+            background: #bcbcbc54; /* Semi-transparent background */
+            backdrop-filter: blur(10px); /* Blur effect */
+            -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  
+          }
+            .SingleBlogCatigory{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: #083C5D;
+              height: 28px;
+              width: 60px;
+              border-radius: 4px;
+            }
+              .SingleBlogCatigory > p{
+                color: white;
+                line-height: px;
+                margin: 0;
+                padding: 0;
+                align-content: center;
+                font-size: 14px;
+              }
+            
+            .SingleBlogHeaderContianer > h1{
+              font-family: cairo;
+              line-height: 35px;
+              font-size: 24px;
+            }
+            .SingleBlogHeaderContianer > p{
+              font-size: 13px;
+              font-weight: 400;
+              line-height: 16px;
+              color: white;
+            }
+        
+        .SingleBlogContentContianer{
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          gap: 20px;
+          padding: 30px 20px;
+          box-sizing: border-box;
+        }
+          .SingleBlogIntroContainer{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            width: 95%;
+          }
+            .SingleBlogIntroContainer > img{
+              height: 10px;
+              width: 10px;
+              margin-top: 5px;
+            }
+            .SingleBlogIntroContainer > h1{
+              font-family: cairo;
+              color: black;
+              font-size: 17px;
+              font-weight: 700;
+            }
+          
+          .SingleBlogContentFirstSection{
+            width: 95%;
+          }
+            .SingleBlogContentFirstSection > p{
+              font-family: Cairo;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 24px;
+              color: #1B1B1F;
+            }
+  
+          .SingleBlogContentSecondSection{
+            width: 95%;
+          }
+            .SingleBlogContentSecondSection > p{
+              font-family: Cairo;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 24px;
+              color: #1B1B1F;
+            }
+  
+      .OtherBlogsContinaer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0px;
+      }
+        .OtherBlogsContinaer > h1{
+          font-size: 22px;
+        }
+    
+    .SingleBlogContactUsContainer{
+      width: 100%;
+      align-self: center;
+      background-color: #083C5D;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      padding: 30px 20px;
+      border-radius: 18px;
+      box-shadow: 5px 5px 25px 0px #00000033;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+      .SingleBlogContactUsContainer >h1{
+        color: white;
+        font-size: 24px;
+        text-align: center;
+      }
+      .SingleBlogContactUsContainer >p{
+        color: white;
+        text-align: center;
+        font-size: 14px;
+        line-height: 22px;
+      }
+      .SingleBlogContactUsContainer > button{
+        background-color: #7DABC7;
+        padding: 9px 15px;
+        border-radius: 6px;
+        font-weight: 400;
+        font-size: 14px;
+      }
+  
+    .SingleBlogHotelCardsContianer{
+      margin-left: -40px;
+      margin-right: -40px;
+      width: calc(100% + 40px); /* Compensates for removed padding */
+      align-self: center;/**/
+      border-radius: 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      background-color: #f3f3f300;
+      padding: 20px 12px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+      .SingleBlogHotelCardsContianer > h1{
+        color:#083C5D;
+      }
+      .HotelCardsContainerAtSingleBlogPage{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+      }
+}

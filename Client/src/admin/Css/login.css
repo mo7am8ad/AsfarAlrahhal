@@ -1,0 +1,28 @@
+.LoginPageContianer{
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+  
+  .LoginPageContianer > form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 20%;
+  }
+  .LoginPageContianer > form > input {
+    height: 32px;
+    border-radius: 6px;
+    border: solid 1px #adacac;
+    padding-right: 10px;
+  }
+  .LoginPageContianer > form > button {
+    width: 100px;
+    align-self: center;
+    height: 30px;
+    background-color: #083C5D;
+    border-radius: 4px;
+  }

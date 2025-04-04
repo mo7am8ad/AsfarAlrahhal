@@ -1,0 +1,165 @@
+.ServiceCardOuterContainer{
+  background-color: #083C5D;
+  width: 340px;
+  height: 440px;
+  border-radius: 22px;
+  margin: 0;
+}
+  .ServiceCardInnerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 30px 30px;
+   
+    box-sizing: border-box;
+  }
+    .ServiceCardContentPartContainer{
+      display: flex;
+      flex-direction: column;
+      /*background-color:aqua;*/
+      gap: 7px;
+    }
+      .ServiceCardContentPartContainerHeader{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+      }
+        .ServiceCardContentPartContainerHeaderImageContainer{
+          width: 65px;
+          height: 65px;
+
+        }
+          .ServiceCardContentPartContainerHeaderImageContainer img{
+            width: 100%;
+            height: 100%;
+          }
+        /*.ServiceCardContentPartContainerHeaderServiceNameContainer{
+
+        }*/
+          .ServiceCardContentPartContainerHeaderServiceNameContainer h1{
+            text-align: center;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 35px;
+            color: white;
+          }
+      /*.ServiceCardContentPartContainerParagraph{
+
+      } */
+        .ServiceCardContentPartContainerParagraph p{
+          text-align: center;
+          color: white;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 50px;         
+        }
+    .ServiceCardButtonPartContainer{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      /*background-color: aquamarine;*/
+    }
+      .ServiceCardButtonPartContainer button{
+        width: 190px;
+        height: 55px;
+        border-radius: 12px;  
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 50px;
+        text-align: center;
+        transition:transform 0.1s ease; 
+      } 
+        .ServiceCardButtonPartContainer button:active{
+          background-color: #6997b4;
+          transform: scale(0.98);
+        }
+
+
+
+
+@media (max-width: 500px){
+  .ServiceCardOuterContainer{
+    background-color: #083C5D;
+    width: 95%;
+    height: max-content;
+    border-radius: 22px;
+    margin: 0;
+  }
+    .ServiceCardInnerContainer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      width: 100%;
+      padding: 30px 60px;
+      gap: 12px;     
+      box-sizing: border-box;
+    }
+      .ServiceCardContentPartContainer{
+        display: flex;
+        flex-direction: column;
+        /*background-color:aqua;*/
+        gap: 7px;
+      }
+        .ServiceCardContentPartContainerHeader{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 8px;
+        }
+          .ServiceCardContentPartContainerHeaderImageContainer{
+            width: 45px;
+            height: 45px;
+  
+          }
+            .ServiceCardContentPartContainerHeaderImageContainer img{
+              width: 100%;
+              height: 100%;
+            }
+          /*.ServiceCardContentPartContainerHeaderServiceNameContainer{
+  
+          }*/
+            .ServiceCardContentPartContainerHeaderServiceNameContainer h1{
+              text-align: center;
+              font-size: 22px;
+              font-weight: 500;
+              line-height: 35px;
+              color: white;
+            }
+        /*.ServiceCardContentPartContainerParagraph{
+  
+        } */
+          .ServiceCardContentPartContainerParagraph p{
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 40px;         
+          }
+      .ServiceCardButtonPartContainer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        /*background-color: aquamarine;*/
+      }
+        .ServiceCardButtonPartContainer button{
+          width: 150px;
+          height: 50px;
+          border-radius: 12px;  
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 50px;
+          text-align: center;
+          transition:transform 0.1s ease; 
+        } 
+          .ServiceCardButtonPartContainer button:active{
+            background-color: #6997b4;
+            transform: scale(0.98);
+          }
+  
+}

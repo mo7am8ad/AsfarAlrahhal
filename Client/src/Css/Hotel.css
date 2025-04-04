@@ -1,0 +1,312 @@
+/*.SingleHotelPage{
+
+}*/
+  .SingleHotelPageContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+  }
+    .SingleHotelImageContainer{
+      width: 450px;
+      height: 450px;
+      border-radius: 24px;
+      box-shadow: 0px 20px 30px 2px #00000040;
+    }
+       .swiper ,.swiper-container, .swiper-wrapper, .swiper-slide {
+        height: 100%;
+        width: 100%;
+        border-radius: 24px;
+        direction: ltr;
+      }
+      .SingleHotelImageContainer > div > div.swiper-button-next{
+        color:#083C5D;
+      }
+      .SingleHotelImageContainer > div > div.swiper-button-prev{
+        color:#083C5D;
+      }
+      .SingleHotelImageContainer > div > div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal > span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+        background-color:#083C5D;
+      }
+      
+      .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        border-radius: 24px;
+      }
+    
+
+    .SingleHotelInfoContainer{
+      width: 530px;
+      height: 400px;
+      padding: 20px 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      border-radius: 24px;
+      box-sizing: border-box;
+      box-shadow: 0px 30px 30px 0px #0000004D;
+    }
+      .SingleHotelInfoContainerUpperPart{
+        display: flex;
+        flex-direction: column;
+        gap: 10px
+      }
+        .SingleHotelInfoContainerUpperPartHeaderSection{
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+          /*.SingleHotelInfoContainerUpperPartHotelNameContainer{
+
+          }*/ 
+            .SingleHotelInfoContainerUpperPartHotelNameContainer h1{  
+              font-size: 36px;
+              font-weight: 500;
+              line-height: 50px;
+            
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              max-width: 100%;          
+            }
+
+          .SingleHotelInfoContainerUpperPartHotelRateContainer{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+          }
+            .SingleHotelInfoContainerUpperPartHotelRateContainer div{
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              gap: 7px;
+            }
+            .SingleHotelInfoContainerUpperPartHotelRateContainer p{
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 25px;
+            }
+            .SingleHotelInfoContainerUpperPartHotelRateContainer img{
+                height: 21px;
+            }
+
+          .SingleHotelInfoContainerUpperPartHotelLocationContainer{
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            gap: 10px;
+          }
+            .SingleHotelInfoContainerUpperPartHotelLocationContainer img{
+              width: 25px;
+            }
+            .SingleHotelInfoContainerUpperPartHotelLocationContainer div{
+              display: flex;
+              align-items: center;
+              width: 90%;
+              
+            }
+              .SingleHotelInfoContainerUpperPartHotelLocationContainer p{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 25px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                max-width: 100%;   
+              }
+
+        /*.SingleHotelInfoContainerUpperPartBody{
+
+        }*/
+          .SingleHotelInfoContainerUpperPartBody p{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 35px;
+            height: 150px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-clamp: 4;           /* For non-WebKit browsers */
+            -webkit-line-clamp: 4;   /* Set number of lines to display */
+            max-height: 90%; 
+               
+          }
+          
+
+      .SingleHotelInfoContainerLowerPart{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+        .SingleHotelInfoContainerLowerPart button{
+          width: 100%;
+          height: 45px;
+          border-radius: 12px;
+          background-color: #083C5D;
+        }
+
+
+@media (max-width: 500px){
+  /*.SingleHotelPage{
+
+}*/
+.SingleHotelPageContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  height:max-content;
+  align-items: center;
+  justify-content: center;
+}
+  .SingleHotelImageContainer{
+    width: 100%;
+    height: 400px;
+    border-radius: 24px;
+    box-shadow: 0px 20px 30px 2px #00000040;
+  }
+     .swiper ,.swiper-container, .swiper-wrapper, .swiper-slide {
+      height: 100%;
+      width: 100%;
+      border-radius: 24px;
+      direction: ltr;
+    }
+    .SingleHotelImageContainer > div > div.swiper-button-next{
+      color:#083C5D;
+    }
+    .SingleHotelImageContainer > div > div.swiper-button-prev{
+      color:#083C5D;
+    }
+    .SingleHotelImageContainer > div > div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal > span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+      background-color:#083C5D;
+    }
+    
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+      border-radius: 24px;
+    }
+  
+
+  .SingleHotelInfoContainer{
+    width: 100%;
+    height: max-content;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 24px;
+    box-sizing: border-box;
+    box-shadow: 0px 30px 30px 0px #0000004D;
+  }
+    .SingleHotelInfoContainerUpperPart{
+      display: flex;
+      flex-direction: column;
+      gap: 10px
+    }
+      .SingleHotelInfoContainerUpperPartHeaderSection{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+        /*.SingleHotelInfoContainerUpperPartHotelNameContainer{
+
+        }*/ 
+          .SingleHotelInfoContainerUpperPartHotelNameContainer h1{  
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 35px;
+            overflow: hidden;
+            white-space: wrap;
+            text-overflow: ellipsis;
+            max-width: 100%;          
+          }
+
+        .SingleHotelInfoContainerUpperPartHotelRateContainer{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          gap: 10px;
+        }
+          .SingleHotelInfoContainerUpperPartHotelRateContainer div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 7px;
+          }
+          .SingleHotelInfoContainerUpperPartHotelRateContainer p{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 25px;
+          }
+          .SingleHotelInfoContainerUpperPartHotelRateContainer img{
+              height: 15px;
+          }
+
+        .SingleHotelInfoContainerUpperPartHotelLocationContainer{
+          display: flex;
+          flex-direction: row;
+          align-content: center;
+          gap: 10px;
+        }
+          .SingleHotelInfoContainerUpperPartHotelLocationContainer img{
+            width: 18px;
+          }
+          .SingleHotelInfoContainerUpperPartHotelLocationContainer div{
+            display: flex;
+            align-items: center;
+            width: 90%;
+            
+          }
+            .SingleHotelInfoContainerUpperPartHotelLocationContainer p{
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 15px;
+              overflow: hidden;
+              white-space: wrap;
+              text-overflow: ellipsis;
+              max-width: 100%;   
+            }
+
+      /*.SingleHotelInfoContainerUpperPartBody{
+
+      }*/
+        .SingleHotelInfoContainerUpperPartBody p{
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 35px;
+          height: max-content;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          white-space: wrap;
+          text-overflow: ellipsis;
+          line-clamp: 4;           /* For non-WebKit browsers */
+          -webkit-line-clamp:inherit;   /* Set number of lines to display */
+          max-height: 90%; 
+             
+        }
+        
+
+    .SingleHotelInfoContainerLowerPart{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+      .SingleHotelInfoContainerLowerPart button{
+        width: 100%;
+        height: 45px;
+        border-radius: 12px;
+        background-color: #083C5D;
+      }
+
+}

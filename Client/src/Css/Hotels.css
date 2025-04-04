@@ -1,0 +1,222 @@
+.HotelsPageContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 80px 0px;
+}
+  .HotelsPageUpperSection{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 1200px;
+    height: 448px;
+    align-items: center;
+  }
+    .HotelsPageUpperSectionDescriptionPart{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+    }
+      .HotelsPageUpperSectionDescriptionPartHeaderContainer{
+        width: 708px;
+        height: 140px;
+        opacity: 0px;
+      }
+        .HotelsPageUpperSectionDescriptionPartHeaderContainer h1{
+          font-size: 58px;
+          font-weight: 600;
+          line-height: 70px;
+          text-align: center;
+          color: #083C5D;
+        }
+          .HotelsPageUpperSectionDescriptionPartHeaderContainer > h1 > span{
+            color: #7DABC7;
+          }
+
+      .HotelsPageUpperSectionDescriptionPartParagraphContainer{
+        height: 144px;
+      }
+        .HotelsPageUpperSectionDescriptionPartParagraphContainer p{
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 36px;
+          text-align: center;
+          color: #5B555C;
+        }
+      
+    .HotelsPageUpperSectionChooseCityPart{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 370px;
+      height: 104px;
+      gap: 12px;
+      opacity: 0px;
+      
+      
+    }
+      /*.HotelsPageUpperSectionChooseCityPartPargraphContainer{
+
+      }*/
+        .HotelsPageUpperSectionChooseCityPartPargraphContainer p{
+          font-size: 22px;
+          font-weight: 500;
+          line-height: 36px;
+          text-align: center;
+          
+        }
+      
+      .HotelsPageUpperSectionChooseCityPartButtonsContainer{
+        width: 298px;
+        height: 56px;
+        border-radius: 50px;
+        border: 2px solid #083C5D;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;      
+      }
+        .CityButton {
+          background-color: #ffffff; /* Default button color */
+          color:#083C5D; /* Text color */
+          border: none;
+          padding: 10px 20px; /* Padding for the buttons */
+          border-radius: 50px; /* Rounded corners */
+          cursor: pointer;
+          transition: background-color 0.3s, transform 0.3s ease; /* Transition for smooth effect */
+          height: 100%;
+          width: 50%;
+          font-weight: 600;
+          font-size: 16px;
+        }
+          .CityButton.active {
+            background-color:#083C5D; /* Active button color */
+            color: #ffffff;
+            transform: scale(1.05); /* Slightly enlarge the active button */
+          }
+
+  .HotelsPageCardsSection{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 50px;
+  }
+
+
+
+@media (max-Width: 500px){
+  .HotelsSection{
+    width: 100%; 
+  }
+  .HotelsPageContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+  }
+    .HotelsPageUpperSection{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      height: 600px;
+      align-items: center;
+    }
+      .HotelsPageUpperSectionDescriptionPart{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        width: 100%;
+        
+      }
+        .HotelsPageUpperSectionDescriptionPartHeaderContainer{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 100%;
+          opacity: 0px;
+        }
+          .HotelsPageUpperSectionDescriptionPartHeaderContainer h1{
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 40px;
+            text-align: center;
+            color: #083C5D;
+          }
+            .HotelsPageUpperSectionDescriptionPartHeaderContainer > h1 > span{
+              color: #7DABC7;
+            }
+  
+        .HotelsPageUpperSectionDescriptionPartParagraphContainer{
+          height: 320px;
+        }
+          .HotelsPageUpperSectionDescriptionPartParagraphContainer p{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 30px;
+            text-align: center;
+            color: #5B555C;
+          }
+        
+      .HotelsPageUpperSectionChooseCityPart{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 104px;
+        gap: 12px;
+        opacity: 0px;
+        
+        
+      }
+        /*.HotelsPageUpperSectionChooseCityPartPargraphContainer{
+  
+        }*/
+          .HotelsPageUpperSectionChooseCityPartPargraphContainer p{
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 36px;
+            text-align: center;
+          }
+        
+        .HotelsPageUpperSectionChooseCityPartButtonsContainer{
+          width: 260px;
+          height: 45px;
+          border-radius: 50px;
+          border: 2px solid #083C5D;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;      
+        }
+          .CityButton {
+            background-color: #ffffff; /* Default button color */
+            color:#083C5D; /* Text color */
+            border: none;
+            padding: 10px 20px; /* Padding for the buttons */
+            border-radius: 50px; /* Rounded corners */
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s ease; /* Transition for smooth effect */
+            height: 100%;
+            width: 50%;
+            font-weight: 600;
+            font-size: 14px;
+          }
+            .CityButton.active {
+              background-color:#083C5D; /* Active button color */
+              color: #ffffff;
+              transform: scale(1.05); /* Slightly enlarge the active button */
+            }
+  
+    .HotelsPageCardsSection{
+      display: grid;
+      grid-template-columns:  1fr;
+      row-gap: 30px;
+    }
+}

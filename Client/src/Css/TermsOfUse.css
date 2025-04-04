@@ -1,0 +1,26 @@
+.TermsOfUseContianer{
+  width: 80%;
+  padding: 50px 70px;
+  display: flex;
+  flex-direction: column;
+}
+  .TermsOfUseIntroContianer{
+   display: flex;
+   flex-direction: column;
+   gap: 15px; 
+  }
+  .TermsOfUseContianer section{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .TermsOfUseContianer a{
+    color: #7DABC7;
+  }
+  .TermsOfUseContianer h2{
+    margin-bottom: 2px;
+  }
+  .TermsOfUseContianer li{
+    padding-right: 25px;
+  }

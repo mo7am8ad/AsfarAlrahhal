@@ -1,0 +1,17 @@
+.InvoicesContianer{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+  .InvoicesContianer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+    .InvoicesContianer li{
+      color: rgb(24, 139, 255);
+    }
+  .InvoicesContianer a{
+    color: rgb(24, 139, 255);
+    text-decoration: underline;
+  }

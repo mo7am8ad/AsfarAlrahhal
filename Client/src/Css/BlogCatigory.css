@@ -1,0 +1,55 @@
+.BlogCatigoryComponent{
+  width: 130px;
+  height: 40px;
+  border-radius: 90px;
+  background-color: #ffffff00;
+  border: 2px solid #083C5D;
+  align-items: center;
+  font-family: Cairo;
+  font-size: 15px;
+  font-weight: 600;
+  color: #083C5D;  
+}
+
+.BlogCatigoryComponent:hover{
+  transition: ease 0.5s;
+  background-color: #6b92ab;
+  color: white;  
+  border: none;
+}
+
+.BlogCatigoryComponent.active{
+  transition: ease 0.2s;
+  background-color: #083C5D;
+  color: white;  
+}
+
+
+@media (max-width: 500px){
+  .BlogCatigoryComponent{
+    width: 80px;
+    height: 30px;
+    border-radius: 90px;
+    background-color: #ffffff00;
+    border: 2px solid #083C5D;
+    align-items: center;
+    font-family: Cairo;
+    font-size: 14px;
+    font-weight: 500;
+    color: #083C5D;  
+  }
+  
+  .BlogCatigoryComponent:hover{
+    transition: ease 0.5s;
+    background-color: #6b92ab;
+    color: white;  
+    border: none;
+  }
+  
+  .BlogCatigoryComponent.active{
+    transition: ease 0.2s;
+    background-color: #083C5D;
+    color: white;  
+  }
+  
+}

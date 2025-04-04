@@ -1,0 +1,183 @@
+.HomePageContainer{
+  display: flex;
+  flex-direction: column;
+  
+  gap: 00px;
+
+}
+  .LandingPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    padding: 0px;
+    
+  }
+    /*background-image: url(../assets/HomePageIntroBackground.png); 
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover; for the wide backgrond from ahmad last update */
+    .LandingPageContainer{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: last baseline;
+      width: 100%;
+      height: 100%;
+      background-image:url(../assets/NewBG.png);
+      background-size: cover;
+      background-position: top;
+      padding: 0px ;
+    }
+
+      .LandingPageContainerContentPartContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        gap: 12px;
+        width:100%;
+        padding: 25px 60px;
+        border-radius: 8px;
+        background-color: rgba(118, 124, 148, 0.3);
+        backdrop-filter: blur(4px);
+        
+      }
+        .LandingPageCOntentPartHeaderContainer h1{
+          font-size: 45px;
+          font-weight: 700;
+          line-height: 60px;
+          color:#ffffff;
+        }
+        .LandingPageCOntentPartHeaderContainer h1 span{
+            color:#083C5D;
+            margin: 0;
+            padding: 0;
+          }
+        /*.LandingPageCOntentPartParagraphContainer{
+          
+        }*/
+        .LandingPageCOntentPartParagraphContainer p{
+          font-size: 20px;
+          
+          font-weight: 400;
+          line-height: 50px;
+          color:#ffffff;
+        }
+
+      /*.LandingPageContainerButtonContainer{
+
+      }*/
+        .LandingPageContainerButtonContainer button{
+          width: 180px;
+          height: 55px;
+          border-radius: 12px;
+          font-size: 18px;
+          font-weight: 600;
+          text-align: center; 
+          transition:transform 0.1s ease;  
+        }
+        .LandingPageContainerButtonContainer button:active{
+          background-color: #042d47;
+          transform: scale(0.98);
+        }
+      .LandingPageContainerImagePartContainer{
+        width :500px;
+        height: 100%;
+        
+      }
+        .LandingPageContainerImagePartContainer img{
+          width: 100%;
+          height: 100%;
+        }
+  
+
+@media (max-width: 500px) {
+  .HomePageContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 00px;
+    
+  }
+    .LandingPage{
+      width: 100%;
+      padding-top: 25px; 
+      padding: 0; 
+    }
+      /*background-image: url(../assets/HomePageIntroBackground.png); 
+      background-repeat: no-repeat;
+      background-position:center;
+      background-size: cover; for the wide backgrond from ahmad last update */
+      .LandingPageContainer{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 643px;
+        gap: 25px;
+      }
+  
+        .LandingPageContainerContentPartContainer{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          width: 100%;
+          
+        }
+          .LandingPageCOntentPartHeaderContainer h1{
+            font-size: 38px;
+            text-align: center;
+            font-weight: 700;
+            line-height: 47px;
+            color:#083C5D;
+          }
+          .LandingPageCOntentPartHeaderContainer h1 span{
+              color:#7DABC7;
+              margin: 0;
+              padding: 0;
+            }
+          /*.LandingPageCOntentPartParagraphContainer{
+            
+          }*/
+          .LandingPageCOntentPartParagraphContainer p{
+            font-size: 14px;
+            text-align: center;
+            font-weight: 400;
+            line-height: 20px;
+            color:#083C5D;
+          }
+  
+        /*.LandingPageContainerButtonContainer{
+  
+        }*/
+          .LandingPageContainerButtonContainer button{
+            width: 150px;
+            height: 50px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            text-align: center; 
+            transition:transform 0.1s ease;  
+          }
+          .LandingPageContainerButtonContainer button:active{
+            background-color: #042d47;
+            transform: scale(0.98);
+          }
+        .LandingPageContainerImagePartContainer{
+          width :100%;    
+          border-radius: 12px;
+          border: 1px solid #042d47;
+        }
+          .LandingPageContainerImagePartContainer img{
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+          }
+
+  
+}

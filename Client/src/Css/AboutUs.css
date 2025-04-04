@@ -1,0 +1,353 @@
+.WhoAreWeSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 115px;
+  height: 90vh;
+}
+  .WhoAreWeContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 480px;
+    gap: 78px;
+  }
+    .WhoAreWeLeftPartContainer{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 633px;
+      justify-content: space-between;
+    }
+      /*.WhoAreWeLeftPartContainerHeader{
+
+      }*/
+        .WhoAreWeLeftPartContainerHeader h1{
+          font-size: 58px;
+          font-weight: 600;
+          color: #083C5D;               
+        }
+      /*.WhoAreWeLeftPartContainerparagraph{
+          
+      }*/
+        .WhoAreWeLeftPartContainerparagraph p{
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 36px;
+          color: #5B555C;            
+        }
+      /*.WhoAreWeLeftPartContainerButton{
+          
+      }*/
+        .WhoAreWeLeftPartContainerButton button{
+          width: 180px;
+          height:60px;
+          border-radius: 12px;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 40px;
+          transition:transform 0.1s ease; 
+        }
+          .WhoAreWeLeftPartContainerButton button:active{
+            background-color: #6997b4;
+            transform: scale(0.98);
+          }
+    /*.WhoAreWeRightPartContainer{
+
+    }*/
+      .WhoAreWeRightPartImageContainer{
+        width: 480px;
+        height: 480px;
+      }
+        .WhoAreWeRightPartImageContainer img{
+          width: 100%;
+          height: 100%;
+          border-radius: 22px;
+        }
+
+
+.WhyUsSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center ;
+  height: 90vh;
+  padding: 0px 115px;
+}
+  .WhyUsContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 78px;
+  }
+
+.OurServicesSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+  .OurServicesContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 38px;
+    width: 100%;
+  }
+    /*.OurServicesHeaderContainer{
+
+    }*/
+      .OurServicesHeaderContainer h1{
+        font-size: 58px;
+        font-weight: 600;
+        line-height: 90px;
+        text-align: center;
+        color: #083C5D;
+      }
+    .OurServicesCardContainer{
+      display: flex;
+      flex-direction: row;
+      width: 75%;
+      justify-content: space-between;
+    }
+
+.ReviewsSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+  .ReviewsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: 530px;
+  }
+    .ReviewsHeaderContainer{
+      width: 900px;
+    }
+      .ReviewsHeaderContainer h1{
+        font-size: 58px;
+        font-weight: 600;
+        line-height: 70px;
+        text-align: center;
+        color: #083C5D;          
+      }
+    
+    .ReviewesBodyContainer{
+      display: flex;
+      flex-direction: column;
+      width: 1040px;
+      height: 450px;
+      border-radius: 24px;
+      align-items: center;
+      box-shadow: 0px 2px 30px 0px #00000033;
+    }
+      .aaaa{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+        height: 100%;
+        padding: 50px;  
+      }
+      .ReviewesBodyContainerRow{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+      }
+
+
+@media (max-width: 500px){
+  .WhoAreWeSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px;
+    width: 100%;
+    height: 900px;
+    margin-bottom: 90px;
+  }
+    .WhoAreWeContainer{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      gap: 28px;
+    }
+      .WhoAreWeLeftPartContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        
+      }
+        /*.WhoAreWeLeftPartContainerHeader{
+  
+        }*/
+          .WhoAreWeLeftPartContainerHeader h1{
+            font-size: 28px;
+            font-weight: 600;
+            text-align: center;
+            color: #083C5D;               
+          }
+        /*.WhoAreWeLeftPartContainerparagraph{
+            
+        }*/
+          .WhoAreWeLeftPartContainerparagraph p{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 36px;
+            color: #5B555C;   
+            text-align: center;         
+          }
+        /*.WhoAreWeLeftPartContainerButton{
+            
+        }*/
+          .WhoAreWeLeftPartContainerButton button{
+            width: 150px;
+            height:50px;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 40px;
+            transition:transform 0.1s ease; 
+          }
+            .WhoAreWeLeftPartContainerButton button:active{
+              background-color: #6997b4;
+              transform: scale(0.98);
+            }
+      /*.WhoAreWeRightPartContainer{
+  
+      }*/
+        .WhoAreWeRightPartImageContainer{
+          width: 327px;
+          height: 327px;
+          border: solid 1px #083C5D;
+          border-radius: 25px;
+        }
+          .WhoAreWeRightPartImageContainer img{
+            width: 100%;
+            height: 100%;
+            border-radius: 22px;
+          }
+  
+  
+  .WhyUsSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    height: max-content;
+    margin-bottom: 90px;
+    padding: 0;
+  }
+  .WhyUsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    gap: 28px;
+  }
+  
+  .OurServicesSection{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+    margin-bottom: 90px;
+  }
+    .OurServicesContainer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 35px;
+      width: 100%;
+      height: max-content;
+    }
+      /*.OurServicesHeaderContainer{
+  
+      }*/
+        .OurServicesHeaderContainer h1{
+          font-size: 28px;
+          font-weight: 600;
+          line-height: 45px;
+          text-align: center;
+          color: #083C5D;
+        }
+      .OurServicesCardContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        gap: 25px;
+      }
+  
+  .ReviewsSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+  }
+    .ReviewsContainer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 35px;
+      width: 100%;
+      height:max-content;
+    }
+      .ReviewsHeaderContainer{
+        width: 100%;
+      }
+        .ReviewsHeaderContainer h1{
+          font-size: 28px;
+          font-weight: 600;
+          line-height: 40px;
+          text-align: center;
+          color: #083C5D;          
+        }
+      
+      .ReviewesBodyContainer{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        height:max-content;
+        border-radius: 24px;
+        align-items: center;
+        box-shadow:none;
+        gap: 15px;
+        background-color:none;
+      }
+        .aaaa{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          box-sizing: border-box;
+          height: 100%;
+          padding: 0px;  
+          gap: 20px;
+        }
+        .ReviewesBodyContainerRow{
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+   
+}

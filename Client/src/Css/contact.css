@@ -1,0 +1,184 @@
+.FormSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  
+}
+  .FormSection form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 50px;
+    width: 650px;
+    gap: 20px;
+    
+    border-radius: 10px;
+  }   
+      .input-box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+        .input-box label{ 
+          color: #083C5D;
+          text-align: start;
+        }
+        .input-box input{
+          height: 37px;
+          border-radius: 5px;
+          border: 1px solid #083C5D;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+        .input-box input:focus{
+          outline: none;
+          border: 2px solid #7DABC7;
+        }
+        .input-box input::placeholder{
+          font-family: Rubik;
+        }
+        .input-box textarea{
+          border-radius: 5px;
+          border: 1px solid #083C5D;
+          height: 150px;
+          padding-left: 15px;
+          padding-right: 15px;
+          padding-top: 15px;
+          font-family: poppins;
+        }
+        .input-box textarea:focus{
+          outline: none;
+          border: 2px solid #7DABC7;
+        }
+        .input-box textarea::placeholder{
+          font-family: Rubik;
+        }
+
+      form button{
+        width: 240px;
+        height: 45px;
+        color: #083C5D;
+        border: 2px solid #083C5D;
+        background-color:white ;
+        font-weight: 600;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition:all 0.4s ease ;
+        margin: 0;
+        
+      }  
+      form button:hover{
+        color: white;
+        border: none;
+        background-color:#083C5D ;
+      }  
+      form button:focus {
+        outline: none; /* Removes default browser outline */
+        box-shadow: 0 0 5px #084267; /* Adds a glow effect */
+      }
+      form button:active{
+        transform: scale(1.05); /* Slightly enlarge the button */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        transition: all 0.4s ease;
+      }  
+
+
+@media(max-width:700px){
+  .FormSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 85vh;
+    width: 100%;
+    background-image: url(../../assets/SecondImage.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+    .FormSection form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0px;
+      width: 85%;
+      gap: 10px;
+      margin-top: 8%;
+      
+      border-radius: 10px;
+    }   
+        form h1{
+  
+          font-size: 32px;
+        }
+        .input-box{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+        }
+          .input-box label{ 
+            color: #6E07F3;
+            text-align: start;
+          }
+          .input-box input{
+            height: 37px;
+            border-radius: 5px;
+            border: 1px solid #727272;
+            padding-left: 15px;
+          }
+          .input-box input:focus{
+            outline: none;
+            border: 2px solid #6E07F3;
+          }
+          .input-box input::placeholder{
+            font-family: poppins;
+          }
+          .input-box textarea{
+            border-radius: 5px;
+            border: 1px solid #727272;
+            height: 150px;
+            padding-left: 15px;
+            padding-top: 15px;
+            font-family: poppins;
+          }
+          .input-box textarea:focus{
+            outline: none;
+            border: 2px solid #6E07F3;
+          }
+          .input-box textarea::placeholder{
+            font-family: poppins;
+          }
+  
+        form button{
+          width: 240px;
+          height: 45px;
+          color: #50daac;
+          border: 2px solid #50daac;
+          background-color:rgb(255, 255, 255) ;
+          font-weight: 600;
+          font-size: 16px;
+          border-radius: 5px;
+          cursor: pointer;
+          transition:all 0.4s ease ;
+          margin: 0;
+        }  
+        form button:hover{
+          color: white;
+          border: none;
+          background-color:#50daac ;
+        }  
+        form button:focus {
+          outline: none; /* Removes default browser outline */
+          box-shadow: 0 0 5px rgba(80, 218, 172, 0.75); /* Adds a glow effect */
+        }
+        form button:active{
+          transform: scale(1.05); /* Slightly enlarge the button */
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+          transition: all 0.4s ease;
+        }  
+}

@@ -1,0 +1,318 @@
+.Footer{
+  display: flex;
+  flex-direction: row;
+  height: 90px;
+  padding: 20px 55px 20px 55px;
+  background-color: #083C5D;
+}
+  .FooterContainer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+    .FooterCompanyContainer{
+      display: flex;
+      align-items: center;
+      width: 200px;
+      gap: 0px;
+    }
+      /*.FooterCompanyImageContainer{
+
+      }*/
+      /*.FooterCompanyNameContainer{
+
+      }*/
+        .FooterCompanyNameContainer > h1{
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 37px;
+          letter-spacing: 0.02em;
+          color: white;          
+        }
+      .DevelopedBy{
+        display: flex;
+        gap: 10px; 
+      }
+        .DevelopedBy > p{
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: 0.02em;
+          color: white; 
+        }
+        .DevelopedBy > a{
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: 0.02em;
+          color: white; 
+          text-decoration: underline;
+        }
+
+
+    
+    /*.FooterLocationContainer{
+
+    }*/
+      .FooterLocationTextContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        height: 50px;
+      }
+        .FooterLocationtextContainerSubjectPart{
+          height: 100%;
+          display: flex;
+          align-items: center;
+
+        }
+          .FooterLocationtextContainerSubjectPart > p{
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+          }
+        .FooterLocationtextContainerAdressPart{
+          height: 100%;
+          display: flex;
+          align-items: center;
+        }
+          .FooterLocationtextContainerAdressPart > p{
+            color: white;
+            font-weight: 300;
+            font-size: 14px;
+          }
+    
+    .FooterPhoneContainer{
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      direction: ltr !important;
+    } 
+      .FotterPhoneIcon{
+        width: 25px;
+        height: 25px;
+      }
+        .FotterPhoneIcon >img{
+          width: 100%;
+          height: 100%;
+        }
+      .FooterPhoneContainerTextContainer >p{
+        color: white;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 17px;
+          letter-spacing: 0.1em;
+      }
+
+    .FooterMailContainer{
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      direction: ltr !important;
+    }
+      /*.FooterMailContainerIconContainer{
+
+      }*/
+      /*.FooterMailContainerTextContainer{
+
+      }*/
+        .FooterMailContainerTextContainer > p{
+          color: white;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 30px;
+          letter-spacing: 0.02em; 
+        } 
+
+    .FooterTermsAndPrivacyContianer{
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      gap: 15px;
+    } 
+      .FooterTermsAndPrivacyContianer > a{
+
+      }
+        .FooterTermsAndPrivacyContianer > a >p{
+          color: white;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 15px;
+          letter-spacing: 0.02em;
+        }
+    
+    .FooterSocialMediaContainerOuter{
+      width: 140px;
+    }
+      .FooterSocialMediaContainerInner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+      }
+        /*.FooterSocialMediaContainerInnerHeaderPart{
+
+        }*/
+          .FooterSocialMediaContainerInnerHeaderPart > p{
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0.02em;
+            color: white;            
+          }
+        .FooterSocialMediaContainerInnerIconsPart{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          direction: ltr !important;
+          width: 100%;
+        }
+
+
+
+@media (max-width: 500px){
+  .Footer{
+    display: flex;
+    flex-direction: row;
+    height: 450px;
+    width: 100%;
+    background-color: #083C5D;
+    padding: 0;
+    padding: 35px 0px 35px 0px;
+  }
+    .FooterContainer{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+      .LogoDevelopedContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .FooterCompanyContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 275px;
+        gap: 3px;
+      }
+        .DevelopedBy{
+          display: flex;
+          gap: 10px; 
+          width: 100%;
+          justify-content: center;
+        }
+        /*.FooterCompanyImageContainer{
+  
+        }*/
+        /*.FooterCompanyNameContainer{
+  
+        }*/
+          .FooterCompanyNameContainer > h1{
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 37px;
+            letter-spacing: 0.02em;
+            color: white;          
+          }
+  
+      
+      .FooterLocationContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+        .FooterLocationTextContainer{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0px;
+          height: 50px;
+        }
+          .FooterLocationtextContainerSubjectPart{
+            height: 100%;
+            display: flex;
+            align-items: center;
+  
+          }
+            .FooterLocationtextContainerSubjectPart > p{
+              color: white;
+              font-size: 16px;
+              font-weight: 500;
+              letter-spacing: 0.02em;
+            }
+          .FooterLocationtextContainerAdressPart{
+            height: 100%;
+            display: flex;
+            align-items: center;
+          }
+            .FooterLocationtextContainerAdressPart > p{
+              color: white;
+              font-weight: 300;
+              font-size: 14px;
+            }
+      
+      .FooterMailContainer{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        direction: ltr !important;
+      }
+        /*.FooterMailContainerIconContainer{
+  
+        }*/
+        /*.FooterMailContainerTextContainer{
+  
+        }*/
+          .FooterMailContainerTextContainer > p{
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 30px;
+            letter-spacing: 0.02em; 
+          } 
+      
+      .FooterTermsAndPrivacyContianer{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .FooterSocialMediaContainerOuter{
+        width: 150px;
+      }
+        .FooterSocialMediaContainerInner{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 15px;
+          width: 100%;
+        }
+          /*.FooterSocialMediaContainerInnerHeaderPart{
+  
+          }*/
+            .FooterSocialMediaContainerInnerHeaderPart > p{
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 18px;
+              letter-spacing: 0.02em;
+              color: white;            
+            }
+          .FooterSocialMediaContainerInnerIconsPart{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            direction: ltr !important;
+            width: 100%;
+          }
+  
+}

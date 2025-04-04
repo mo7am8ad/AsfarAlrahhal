@@ -1,0 +1,24 @@
+.EditAddHotelContianer{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.EditAddHotelForm{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+  .EditAddHotelForm > input,select{
+    height: 32px;
+    border-radius: 6px;
+    border: solid 1px #adacac;
+    padding-right: 10px;
+  }
+  .EditAddHotelForm > button{
+    width: 100px;
+    height: 30px;
+    background-color: #083C5D;
+    border-radius: 4px;
+  }
