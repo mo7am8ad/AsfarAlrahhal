@@ -87,23 +87,20 @@ router.post("/create-payment-link", async (req, res) => {
         });
 
     } catch (error) {
-        console.error("\n⚠️ ERROR CAUGHT ⚠️");
-        console.error("Error Message:", error.message);
-        
-        if (error.response) {
-            console.error("HTTP Status:", error.response.status);
-            console.error("Response Data:", JSON.stringify(error.response.data, null, 2));
-            console.error("Response Headers:", error.response.headers);
-        } else if (error.request) {
-            console.error("No Response Received - Request Details:", error.request);
-        }
-        
-        console.error("Error Stack:", error.stack);
+        console.error("Full PayFort Response:", {
+            status: error.response?.status,
+            headers: error.response?.headers,
+            data: error.response?.data,  // This contains the actual error message from PayFort
+            config: {
+                url: error.response?.config?.url,
+                data: error.response?.config?.data
+            }
+        });
         
         return res.status(500).json({
             success: false,
             message: "Payment link generation failed",
-            error: error.response?.data?.response_message || error.message
+            error: error.response?.data || error.message
         });
     }
 });
