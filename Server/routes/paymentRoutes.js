@@ -3,6 +3,7 @@ import axios from "axios";
 import crypto from "crypto";
 import dotenv from "dotenv";
 import { generateSignature } from "../utils/signatureUtils.js";
+import { error } from "console";
 
 dotenv.config();
 const router = express.Router();
@@ -17,6 +18,7 @@ router.post("/create-payment-link", async (req, res) => {
         // Validate required fields
         if (!invoiceId || !customerName || !customerEmail || !customerNumber || !totalAmount) {
             return res.status(400).json({ message: "Missing required fields." });
+            
         }
 
         // Format the request_expiry_date

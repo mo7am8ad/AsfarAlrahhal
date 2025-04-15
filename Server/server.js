@@ -17,7 +17,15 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // Middleware
-app.use(cors()); // Enable Cross-Origin requests
+app.use(cors({
+  origin: [
+    'https://www.asfaralrahhal.net',
+    'https://asfaralrahhal.net',
+    'http://localhost:3000'  // For local dev
+  ],
+  credentials: true
+}));
+
 app.use(express.json()); // Parse incoming JSON requests
 
 // MongoDB connection
