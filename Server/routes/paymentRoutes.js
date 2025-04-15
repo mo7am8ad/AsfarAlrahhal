@@ -12,69 +12,98 @@ const router = express.Router();
 
 // Route to create a payment link
 router.post("/create-payment-link", async (req, res) => {
+    console.log("--- NEW PAYMENT LINK REQUEST STARTED ---");
+    console.log("Request Body:", JSON.stringify(req.body, null, 2));
+
     try {
-        const { invoiceId, customerName, customerEmail, customerNumber, totalAmount, notificationType } = req.body;
-
-        // Validate required fields
+        // Input validation
+        console.log("\n[1] Validating Inputs...");
+        const { invoiceId, customerName, customerEmail, customerNumber, totalAmount } = req.body;
         if (!invoiceId || !customerName || !customerEmail || !customerNumber || !totalAmount) {
+            console.error("Validation Failed - Missing Fields:", {
+                invoiceId, customerName, customerEmail, customerNumber, totalAmount
+            });
             return res.status(400).json({ message: "Missing required fields." });
-            
         }
+        console.log("✅ Input Validation Passed");
 
-        // Format the request_expiry_date
+        // Prepare parameters
+        console.log("\n[2] Preparing Parameters...");
         const requestExpiryDate = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000)
             .toISOString()
             .replace(/\.\d+Z$/, "+03:00");
-
-        // Payment request parameters
+        
         const params = {
             service_command: "PAYMENT_LINK",
             access_code: process.env.AMAZON_ACCESS_CODE,
             merchant_identifier: process.env.AMAZON_MERCHANT_ID,
             merchant_reference: invoiceId,
-            amount: totalAmount * 100, // Convert to smallest unit (e.g., cents)
+            amount: Math.round(parseFloat(totalAmount) * 100).toString(),
             currency: process.env.AMAZON_CURRENCY || "SAR",
             language: "en",
             customer_email: customerEmail,
             customer_name: customerName,
             customer_phone: customerNumber,
             request_expiry_date: requestExpiryDate,
-            notification_type: "EMAIL", // for now , im gonna change it later
             return_url: process.env.RETURN_URL,
         };
+        console.log("Parameters Prepared:", JSON.stringify(params, null, 2));
 
-        // Generate signature
+        // Signature generation
+        console.log("\n[3] Generating Signature...");
         params.signature = generateSignature(params, process.env.AMAZON_SHA_REQUEST_PHRASE);
+        console.log("Signature Generated:", params.signature);
 
-        console.log("Sending request to Amazon Pay with params:", params);
+        // API Request
+        console.log("\n[4] Sending to APS...");
+        console.log("Full Request Payload:", JSON.stringify(params, null, 2));
+        console.log("API Endpoint:", process.env.AMAZON_API_URL);
 
-        // Send request to Amazon Pay (PayFort)
-        const response = await axios.post(process.env.AMAZON_API_URL, params, {
-            headers: { "Content-Type": "application/json" },
-        });
+        const response = await axios.post(
+            process.env.AMAZON_API_URL, 
+            params,
+            {
+                headers: { 
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                timeout: 10000
+            }
+        );
+        console.log("✅ APS Response Received");
+        console.log("Response Status:", response.status);
+        console.log("Response Data:", JSON.stringify(response.data, null, 2));
 
-        console.log("Amazon Pay Response:", response.data);
-
-        // Check if the payment link was generated successfully
-        if (response.data.response_code !== "48000") {
-            return res.status(400).json({
-                success: false,
-                message: "Failed to generate payment link",
-                error: response.data.response_message,
-            });
+        // Handle response
+        if (!response.data.payment_link) {
+            console.error("APS Response Missing Payment Link");
+            throw new Error("No payment_link in response");
         }
 
-        // Return the payment link to the frontend
-        return res.status(200).json({
+        console.log("\n[5] Success - Payment Link Generated");
+        return res.json({
             success: true,
-            paymentLink: response.data.payment_link,
-            paymentLinkId: response.data.payment_link_id,
+            paymentLink: response.data.payment_link
         });
+
     } catch (error) {
-        console.error("Payment Link Error:", error.response?.data || error.message);
+        console.error("\n⚠️ ERROR CAUGHT ⚠️");
+        console.error("Error Message:", error.message);
+        
+        if (error.response) {
+            console.error("HTTP Status:", error.response.status);
+            console.error("Response Data:", JSON.stringify(error.response.data, null, 2));
+            console.error("Response Headers:", error.response.headers);
+        } else if (error.request) {
+            console.error("No Response Received - Request Details:", error.request);
+        }
+        
+        console.error("Error Stack:", error.stack);
+        
         return res.status(500).json({
-            message: "Internal Server Error",
-            error: error.response?.data || error.message,
+            success: false,
+            message: "Payment link generation failed",
+            error: error.response?.data?.response_message || error.message
         });
     }
 });
