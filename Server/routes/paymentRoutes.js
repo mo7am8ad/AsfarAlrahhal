@@ -41,6 +41,7 @@ router.post("/create-payment-link", async (req, res) => {
             amount: Math.round(parseFloat(totalAmount) * 100).toString(),
             currency: process.env.AMAZON_CURRENCY || "SAR",
             language: "en",
+            notification_type: "EMAIL",
             customer_email: customerEmail,
             customer_name: customerName,
             customer_phone: customerNumber,
