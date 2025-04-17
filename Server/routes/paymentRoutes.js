@@ -84,7 +84,8 @@ router.post("/create-payment-link", async (req, res) => {
         console.log("\n[5] Success - Payment Link Generated");
         return res.json({
             success: true,
-            paymentLink: response.data.payment_link
+            paymentLink: response.data.payment_link,
+            paymentLinkId:response.data.payment_link_id
         });
 
     } catch (error) {
