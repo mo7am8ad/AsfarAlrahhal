@@ -21,6 +21,7 @@ import Allinvoices from "../admin/Allinvoices.jsx";
 import TermsOfUse from "../pages/TermOfUse.jsx";
 import PrivacyPolicy from "../pages/PrivacyPolicy.jsx";
 import ContactForm from "../pages/ContactForm.jsx";
+import VisasAndInsurance from "../pages/VisasAndInsurance.jsx";
 
 
 // Authentication check function
@@ -50,6 +51,7 @@ const Router = () => {
           <Route path="/terms&conditions" element={<TermsOfUse/>} />
           <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
           <Route path="/Contact-us" element={<ContactForm/>} />
+          <Route path="/VisasAndInsurance" element={<VisasAndInsurance/>} />
 
           
 

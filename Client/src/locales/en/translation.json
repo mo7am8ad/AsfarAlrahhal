@@ -2,6 +2,7 @@
   "NavbarHotels":"Hotels",
   "NavbarFlights":"Flights",
   "NavbarTransportations":"Transportations",
+  "NavbarVisasAndInsurance":"Visas & Insurance",
   "NavbarAboutUs":"About Us",
   "NavbarBlogs":"Blogs",
   "NavbarContactUs":"Contact Us",
@@ -17,9 +18,13 @@
   "HotelsTextAboveChoosingCity": "Where Are You Traveling to?",
   "HotelsChooseButtonMakkah":"Makkah",
   "HotelsChooseButtonMadinah":"Madinah",
+
+
+
   "FLightsHeader":"Book Your Flight With Asfar Al-Rahhal",
-  "FLightsParagraph":"With Asfar Alrahal, we provide you with the best deals and the easiest way to book your trips to Makkah and Madinah. No need to search endlessly; we offer competitive ticket prices to get you to your sacred destinations with ease.Whether you're traveling for Umrah or Hajj, we guarantee great prices and a simple, quick booking process. Book your journey to Makkah and Madinah with confidence through Asfar Alrahal and let your spiritual journey start before you even arrive.",
-  "FlightsDirectionHeader":"Where do you want to go?",
+  "FLightsParagraph":"No more endless searching – we offer the most affordable flight tickets to any destination, whether for religious travel (Makkah & Madinah) or global tourism and leisure.",
+  "FlightsCardsHeader":"Most booked flight destinations by our customers",
+  "FlightsDirectionHeader":"have another destenision ?",
   "OneWay":"One Way",
   "RoundTrip":"Round Trip",
   "One Way":"One Way",
@@ -27,6 +32,19 @@
   "FlightsDirectionFromInput":"From:",
   "FlightsDirectionToInput":"To:",
   "FlightsDirectionCheckFlightButton":"Check Flights",
+
+  "FlightsSaudiArabiaFlightCard":"Saudi Arabia",
+  "FlightsUAEFlightCard":"UAE",
+  "FlightsTurkeyFlightCard":"Turkey",
+  "FlightsUKFlightCard":"UK",
+  "FlightsIndonesiaFlightCard":"Indonesia",
+  "FlightsAzarbiganFlightCard":"Azarbigan",
+  "FlightsGermanyFlightCard":"Germany",
+  "FlightsEgyptFlightCard":"Egypt",
+  "FlightsGeorgiaFlightCard":"Georgia",
+  "FlightsFlightCardApplyNowButton":"Book now",
+
+
   "TransportationHeader":"Make Your Travel Effort-Less By Booking a Transportation From Us",
   "TransportationPargraph":"With Asfar Al-Rahhal, your journey starts with peace of mind and seamless planning. We offer a variety of transportation options to meet your needs, whether you’re traveling between Makkah and Madinah or visiting other sacred sites with ease and comfort. No need to worry about finding reliable, comfortable transportation – we provide the best deals that suit your budget, ensuring a smooth and hassle-free journey.Our transportation services are designed to accommodate all your needs.",
   "TransportationButton":"Rent a Car",
@@ -97,6 +115,22 @@
   "ContactUsMessagePlaceHolder":"Enter your message",
   "ContactUsButtonSend":"Send",
   "ContactUsButtonSending":"Sending...",
+
+
+  "VisasAndInsuranceVisasHeader":"Visa processing",
+  "VisasAndInsuranceVisasParagraph":"We provide hassle-free visa processing services, ensuring your application is completed accurately and efficiently. With up-to-date information on each country's requirements, our dedicated team is available 24/7 to help you secure the right visa for your journey—effortlessly.",
+  "VisasAndInsuranceCooseVisaHeader":"Choose your destination country for visa application",
+  "VisasAndInsuranceSchengenVisaCard":"Schengen Visa",
+  "VisasAndInsuranceTurkeyVisaCard":"Turkey Visa",
+  "VisasAndInsuranceUKVisaCard":"UK Visa",
+  "VisasAndInsuranceUAEVisaCard":"UAE Visa",
+  "VisasAndInsuranceIndonesiaVisaCard":"Indonesia Visa",
+  "VisasAndInsuranceAzarbiganVisaCard":"Azerbaijan Visa",
+  "VisasAndInsuranceVisaCardApplyNowButton":"apply now",
+
+  "VisasAndInsuranceInsuranceHeader":"Travel Insurance Processing",
+  "VisasAndInsuranceInsuranceParagraph":"We strive to make your journey safe and worry-free with comprehensive travel insurance packages. Covering a wide range of needs, we offer diverse options to suit all budgets – ensuring you travel with peace of mind.",
+  "VisasAndInsuranceInsuranceApplyNowButton":"Get Your Insurance Now",
 
   "TermOfUseHeader":"Terms and Conditions",
   "TermOfUseIntro":"Welcome to Asfar Alrahhal. We provide hotel booking services through our platform and offer electronic payment options via payment links and company bank accounts to ensure a secure andsmooth payment experience. By using our services, you agree to the terms, conditions, and privacypolicy outlined below.",

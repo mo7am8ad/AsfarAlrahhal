@@ -1,0 +1,336 @@
+.VisasAndInsurancePageContainer{
+  display: flex;
+  flex-direction: column;
+  padding: 80px 115px;
+  gap: 190px;
+}
+  .VisasContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+    .VisasContainerIntroSection{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+      .VisasContainerIntroSectionTextContainer{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        width: 800px
+      }
+        .VisasContainerIntroSectionTextContainer h1{
+          font-size: 35px;
+          font-weight: 700;
+        }
+        .VisasContainerIntroSectionTextContainer p{
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 36px;
+        }
+      .VisasContainerIntroSectionImgContainer{
+        height:300px;
+        width: 350px;
+        border-radius: 24px;
+      }
+        .VisasContainerIntroSectionImgContainer img{
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          border-radius: 24px;
+        }
+
+    .VisaCardsContainer{
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      justify-content: center;
+      align-items: center;
+    }
+    .VisaCardsHeaderContinaer{
+      margin-bottom: 30px;
+    }
+      .CardsFirstLineContainer{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 50px;
+      }
+      .CardsSecondLineContainer{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 50px;
+      }
+      .OddVisaCard{
+        background-color: #083C5D;
+        color: white;
+      }
+      .EvenVisaCard{
+        background-color: white;
+        color: #083C5D;
+      }
+      .VisaCard{
+        width: 310px;
+        height: 140px;
+        box-sizing:border-box;
+        border-radius: 18px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0px 4px 50px 0px rgba(0,0,0,0.25);
+        cursor: pointer;
+      }
+        .VisaCardFirstLine{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+          .VisaCardFirstLine > p{
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 50px;
+          }
+          .VisaCardFirstLine > div{
+            width: 50px;
+            height: 50px;
+            border-radius: 900;
+          }
+            .VisaCardFirstLine > div > img{
+              width: 100%;
+              height: 100%;
+              background-size: cover;
+              border-radius: 900;
+            }
+        .VisaCard > p{
+          font-size: 15px;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+    
+  .InsuranceContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+    .InsuranceContainerIntroSectionTextContainer{
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      gap: 15px;
+      width: 800px
+    }
+      .InsuranceContainerIntroSectionTextContainer h1{
+        font-size: 35px;
+        font-weight: 700;
+      }
+      .InsuranceContainerIntroSectionTextContainer p{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 36px;
+      }
+      .InsuranceContainerIntroSectionTextContainer button{
+        width: 200px;
+        height: 50px;
+        background-color: #7DABC7;
+        border-radius: 12px;
+        font-size: 15px;
+        font-weight: 400;
+        padding: 0px 10px;
+      }
+    .InsuranceContainerIntroSectionImgContainer{
+      height:300px;
+      width: 350px;
+      border-radius: 24px;
+    }
+      .InsuranceContainerIntroSectionImgContainer img{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        border-radius: 24px;
+      }
+
+
+
+@media (max-width: 500px){
+  .VisasAndInsurancePageContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+    gap: 80px;
+  }
+    .VisasContainer{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+      .VisasContainerIntroSection{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+        .VisasContainerIntroSectionTextContainer{
+          display: flex;
+          height: 100%;
+          flex-direction: column;
+          justify-content: center;
+          gap: 15px;
+          width: 100%;
+        }
+          .VisasContainerIntroSectionTextContainer h1{
+            font-size: 28px;
+            font-weight: 600;
+          }
+          .VisasContainerIntroSectionTextContainer p{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 36px;
+          }
+        .VisasContainerIntroSectionImgContainer{
+          height:300px;
+          width: 100%;
+          border-radius: 24px;
+        }
+          .VisasContainerIntroSectionImgContainer img{
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            border-radius: 24px;
+          }
+  
+      .VisaCardsContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      .VisaCardsHeaderContinaer{
+        margin-bottom: 15px;
+      }
+        .VisaCardsHeaderContinaer h1{
+          font-size: 21px;
+        }
+        .CardsFirstLineContainer{
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+          gap: 20px;
+        }
+        .CardsSecondLineContainer{
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+          gap: 20px;
+        }
+        .OddVisaCard{
+          background-color: #083C5D;
+          color: white;
+        }
+        .EvenVisaCard{
+          background-color: white;
+          color: #083C5D;
+        }
+        .VisaCard{
+          width: 350px;
+          height: 140px;
+          box-sizing:border-box;
+          border-radius: 18px;
+          padding: 30px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          box-shadow: 0px 4px 50px 0px rgba(0,0,0,0.25);
+          cursor: pointer;
+        }
+          .VisaCardFirstLine{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+            .VisaCardFirstLine > p{
+              font-size: 20px;
+              font-weight: 600;
+              line-height: 50px;
+            }
+            .VisaCardFirstLine > div{
+              width: 50px;
+              height: 50px;
+              border-radius: 900;
+            }
+              .VisaCardFirstLine > div > img{
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                border-radius: 900;
+              }
+          .VisaCard > p{
+            font-size: 15px;
+            font-weight: 400;
+            text-decoration: underline;
+          }
+  
+      
+    .InsuranceContainer{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      gap: 30px;
+    }
+      .InsuranceContainerIntroSectionTextContainer{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        width: 100%
+      }
+        .InsuranceContainerIntroSectionTextContainer h1{
+          font-size: 28px;
+          font-weight: 600;
+        }
+        .InsuranceContainerIntroSectionTextContainer p{
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 36px;
+        }
+        .InsuranceContainerIntroSectionTextContainer button{
+          width: 180px;
+          height: 50px;
+          background-color: #7DABC7;
+          border-radius: 12px;
+          font-size: 13px;
+          font-weight: 400;
+          padding: 0px 10px;
+        }
+      .InsuranceContainerIntroSectionImgContainer{
+        height:300px;
+        width: 100%;
+        border-radius: 24px;
+      }
+        .InsuranceContainerIntroSectionImgContainer img{
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          border-radius: 24px;
+        }
+  
+}

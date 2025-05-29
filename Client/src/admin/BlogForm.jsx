@@ -21,7 +21,7 @@ const BlogForm = ({ isEdit }) => {
     if (isEdit && id) {
       const fetchBlog = async () => {
         try {
-          const response = await fetch(`http://localhost:5000/api/blogs/${id}`, {
+          const response = await fetch(`https://api.asfaralrahhal.net/api/blogs/${id}`, {
             headers: {
               Authorization: `Bearer ${sessionStorage.getItem("token")}`,
             },
@@ -131,8 +131,8 @@ const BlogForm = ({ isEdit }) => {
     };
 
     const url = isEdit
-      ? `http://localhost:5000/api/blogs/${id}`
-      : "http://localhost:5000/api/blogs";
+      ? `https://api.asfaralrahhal.net/api/blogs/${id}`
+      : "https://api.asfaralrahhal.net/api/blogs";
 
     const method = isEdit ? "PUT" : "POST";
 

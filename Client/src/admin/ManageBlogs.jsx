@@ -10,7 +10,7 @@ const ManageBlogs = () => {
   // Fetch hotels from the backend
   const fetchBlogs = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/blogs", {
+      const response = await fetch("https://api.asfaralrahhal.net/api/blogs", {
         headers: {
           Authorization: `Bearer ${sessionStorage.getItem("token")}`,
         },
@@ -32,7 +32,7 @@ const ManageBlogs = () => {
   // Handle delete hotel
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/blogs/${id}`, {
+      const response = await fetch(`https://api.asfaralrahhal.net/api/blogs/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${sessionStorage.getItem("token")}`,

@@ -140,10 +140,12 @@
     position: relative;    
     display: flex;
     flex-direction: column;
-    top: 205px; /* Adjust based on navbar height */
-    left: 80px;
+    gap: 32px;
+    top: 225px; /* Adjust based on navbar height */
+    left: 90px;
     width: 200px;
-    height: 320px;
+    height: 380px;
+    padding: 0px 0px;
   }
   .nav-toggle {
     display: block;

@@ -19,7 +19,7 @@ const Invoices = () => {
   useEffect(() => {
     const fetchHotels = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/hotels", {
+        const response = await fetch("https://api.asfaralrahhal.net/api/hotels", {
           headers: {
             Authorization: `Bearer ${sessionStorage.getItem("token")}`,
           },
@@ -50,7 +50,7 @@ const Invoices = () => {
   const handleCreateInvoice = async () => {
     try {
         // Generate payment link
-        const paymentResponse = await fetch("http://localhost:5000/api/payments/create-payment-link", {
+        const paymentResponse = await fetch("https://api.asfaralrahhal.net/api/payments/create-payment-link", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -67,14 +67,13 @@ const Invoices = () => {
         });
 
         const paymentData = await paymentResponse.json();
-
         // Check if the payment link was generated successfully
         if (!paymentData.success) {
             throw new Error(paymentData.error || "Failed to generate payment link");
         }
 
         // Save invoice details to the database
-        const invoiceResponse = await fetch("http://localhost:5000/api/invoices", {
+        const invoiceResponse = await fetch("https://api.asfaralrahhal.net/api/invoices", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -93,7 +92,6 @@ const Invoices = () => {
         });
 
         const invoiceData = await invoiceResponse.json();
-
         // Check if the invoice was saved successfully
         if (!invoiceResponse.ok) {
             throw new Error(invoiceData.message || "Failed to create invoice");

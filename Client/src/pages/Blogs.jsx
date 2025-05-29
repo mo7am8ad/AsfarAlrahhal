@@ -19,7 +19,7 @@ const Blogs = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/blogs?lang=${i18n.language}`);
+        const response = await fetch(`https://api.asfaralrahhal.net/api/blogs?lang=${i18n.language}`);
         if (!response.ok) throw new Error("Failed to fetch blogs");
         const data = await response.json();
         setBlogs(data);

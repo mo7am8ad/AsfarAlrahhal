@@ -14,8 +14,10 @@ function Navbar() {
   const [activeTab, setActiveTab] = useState(location.pathname);
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
   const [isNavDropdownOpen, setIsNavDropdownOpen] = useState(false);
+  
+  // Initialize language from localStorage or default to Arabic
   const [currentLanguage, setCurrentLanguage] = useState(
-    localStorage.getItem("appLanguage") || i18n.language
+    localStorage.getItem("appLanguage") || "ar"
   );
 
   useEffect(() => {
@@ -23,10 +25,14 @@ function Navbar() {
     window.scrollTo(0, 0);
   }, [location]);
 
+  // Set initial language and direction when component mounts
   useEffect(() => {
-    // Apply the direction based on the current language
-    document.body.dir = currentLanguage === "ar" ? "rtl" : "ltr";
-  }, [currentLanguage]);
+    const savedLanguage = localStorage.getItem("appLanguage") || "ar";
+    i18n.changeLanguage(savedLanguage);
+    document.documentElement.lang = savedLanguage;
+    document.body.dir = savedLanguage === "ar" ? "rtl" : "ltr";
+    setCurrentLanguage(savedLanguage);
+  }, []);
 
   const toggleLanguageDropdown = () => {
     setIsLanguageDropdownOpen(!isLanguageDropdownOpen);
@@ -38,11 +44,13 @@ function Navbar() {
 
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
+    document.documentElement.lang = lang;
     document.body.dir = lang === "ar" ? "rtl" : "ltr";
-    localStorage.setItem("appLanguage", lang); // Save language to local storage
+    localStorage.setItem("appLanguage", lang);
     setCurrentLanguage(lang);
     setIsLanguageDropdownOpen(false);
   };
+
 
   return (
     <nav className="navbar">
@@ -76,6 +84,17 @@ function Navbar() {
             {t("NavbarTransportations")}
           </li>
         </NavLink>
+
+        <NavLink to="/VisasAndInsurance" onClick={() => setIsNavDropdownOpen(false)}>
+          <li
+            className={`navbar-tab ${
+              activeTab === "/VisasAndInsurance" ? "active" : ""
+            }`}
+          >
+            {t("NavbarVisasAndInsurance")}
+          </li>
+        </NavLink>
+
         <NavLink to="/about-us" onClick={() => setIsNavDropdownOpen(false)}>
           <li
             className={`navbar-tab ${

@@ -2,6 +2,7 @@
   "NavbarHotels":"الفنادق",
   "NavbarFlights":"الطيران",
   "NavbarTransportations":"المواصلات",
+  "NavbarVisasAndInsurance":"التأشيرات والتأمينات",
   "NavbarAboutUs":"من نحن",
   "NavbarBlogs":"المدونة",
   "NavbarContactUs":"تواصل معنا",
@@ -19,9 +20,12 @@
   "HotelsTextAboveChoosingCity": "اختر مكان الإقامة:",
   "HotelsChooseButtonMakkah":"مكة المكرمة",
   "HotelsChooseButtonMadinah":"المدينة المنورة",
+
+
   "FLightsHeader":"احجز تذكرة طيرانك مع أسفار الرحّال",
-  "FLightsParagraph":"مع أسفار الرحّال، تحصل على أفضل العروض وأسرع طريقة لحجز رحلاتك لمكة والمدينة. ما يحتاج تعب البحث؛ وفرنا لك أسعار تنافسية توصلّك للأماكن المقدّسة بكل سهولة وراحة.سواءً كانت رحلتك للعمرة أو للحج، تبدأ رحلتك بأسعار تناسب ميزانيتك وخطوات حجز سهلة وسريعة. احجز بثقة مع أسفار الرحّال، وخلّي رحلتك الروحانية تبدأ من لحظة حجزك.",
-  "FlightsDirectionHeader":"حدد وجهتك :",
+  "FLightsParagraph":"لا داعي للبحث الطويل – نوفر لك أرخص تذاكر الطيران إلى أي وجهة تختارها، سواءً للسفر الديني (مكة والمدينة) أو للسياحة والترفيه حول العالم.",
+  "FlightsCardsHeader":"وجهات الطيران الأكثر حجزا من عملائنا",
+  "FlightsDirectionHeader":"لديك وجهة أخرى ؟",
   "OneWay":"اتجاه واحد",
   "RoundTrip":"ذهاب وعودة",
   "One Way":"اتجاه واحد",
@@ -29,6 +33,20 @@
   "FlightsDirectionFromInput":"من:",
   "FlightsDirectionToInput":"إلى:",
   "FlightsDirectionCheckFlightButton":"ابحث عن رحلة",
+
+
+  "FlightsSaudiArabiaFlightCard":"السعودية",
+  "FlightsUAEFlightCard":"الإمارات",
+  "FlightsTurkeyFlightCard":"تركيا",
+  "FlightsUKFlightCard":"بريطانيا",
+  "FlightsIndonesiaFlightCard":"اندونيسيا",
+  "FlightsAzarbiganFlightCard":"أذربيجان",
+  "FlightsGermanyFlightCard":"ألمانيا",
+  "FlightsEgyptFlightCard":"مصر",
+  "FlightsGeorgiaFlightCard":"جورجيا",
+  "FlightsFlightCardApplyNowButton":"احجز تذكرتك",
+  
+
   "TransportationHeader":"اجعل رحلتك أسهل وبلا عناء من خلال حجزك لوسيلة تنقل من خلال أسفار الرحّال",
   "TransportationPargraph":"مع أسفار الرحّال، رحلتك تبدأ براحة بال وتخطيط سلس. نقدم لك خيارات متعددة من وسائل النقل لتلبية احتياجاتك سواء كانت تنقلاتك بين مكة والمدينة أو زيارة المواقع المقدسة بكل سهولة وراحة. بدون تعب البحث أو القلق بشأن الراحة والأمان، نوفر لك أفضل العروض التي تتماشى مع ميزانيتك وتضمن لك رحلة هادئة وخالية من المتاعب.خدمات النقل عندنا تلبي كل احتياجاتك، سواء كنت مسافر مع العائلة أو لوحدك، هدفنا أن تكون رحلتك ميسّرة من لحظة وصولك. احجز مع أسفار الرحّال واستمتع بتجربة نقل موثوقة، مريحة، وملائمة تبدأ بها رحلتك الروحانية بخطوات بسيطة وبأمان كامل.",
   "TransportationButton":"استأجر سيارة",
@@ -99,6 +117,20 @@
   "ContactUsButtonSend":"أرسل",
   "ContactUsButtonSending":"يتم الإرسال...",
 
+  "VisasAndInsuranceVisasHeader":"إستخراج التأشيرات",
+  "VisasAndInsuranceVisasParagraph":"نقدم لكم خدمة استخراج التأشيرات بكل سهولة ويسر، نضمن لكم إتمام الإجراءات بدقة وسرعة، مع توفير أحدث المعلومات حول متطلبات كل دولة. فريقنا متاح على مدار الساعة لمساعدتكم في الحصول على التأشيرة المناسبة لرحلتكم دون عناء.",
+  "VisasAndInsuranceCooseVisaHeader":"اختر البلد التي تريد الحصول على تأشيرتها",
+  "VisasAndInsuranceSchengenVisaCard":"تأشيرة الشينجن",
+  "VisasAndInsuranceTurkeyVisaCard":"تأشيرة تركيا",
+  "VisasAndInsuranceUKVisaCard":"تأشيرة بريطانيا",
+  "VisasAndInsuranceUAEVisaCard":"تأشيرة الإمارات",
+  "VisasAndInsuranceIndonesiaVisaCard":"تأشيرة إندونيسيا",
+  "VisasAndInsuranceAzarbiganVisaCard":"تأشيرة أذربيجان",
+  "VisasAndInsuranceVisaCardApplyNowButton":"قدم الان",
+
+  "VisasAndInsuranceInsuranceHeader":"إستخراج التأمينات السياحية",
+  "VisasAndInsuranceInsuranceParagraph":"نسعى لجعل رحلتكم آمنة ومطمئنة من خلال باقات تأمين سفر شاملة. نغطي مجموعة واسعة من الاحتياجات، نقدم خيارات متنوعة تناسب جميع الميزانيات، لضمان سفركم بلا قلق.",
+  "VisasAndInsuranceInsuranceApplyNowButton":"احصل على تامينك الان",
   
   
 

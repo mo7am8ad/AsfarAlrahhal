@@ -19,7 +19,7 @@ const Blog = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/blogs/${id}?lang=${language}`);
+        const response = await fetch(`https://api.asfaralrahhal.net/api/blogs/${id}?lang=${language}`);
         if (!response.ok) throw new Error("Failed to fetch blog");
         const data = await response.json();
         setBlog(data);
@@ -36,7 +36,7 @@ const Blog = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/blogs?lang=${language}`);
+        const response = await fetch(`https://api.asfaralrahhal.net/api/blogs?lang=${language}`);
         if (!response.ok) throw new Error("Failed to fetch blogs");
         const data = await response.json();
         setBlogs(data);
@@ -51,7 +51,7 @@ const Blog = () => {
   useEffect(() => {
     const fetchHotels = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/hotels");
+        const response = await fetch("https://api.asfaralrahhal.net/api/hotels");
         if (!response.ok) throw new Error("Failed to fetch hotels");
         const data = await response.json();
         setHotels(data);

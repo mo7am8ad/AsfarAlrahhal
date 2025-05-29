@@ -20,7 +20,7 @@ const HotelForm = ({ isEdit }) => {
     if (isEdit && id) {
       const fetchHotel = async () => {
         try {
-          const response = await fetch(`http://localhost:5000/api/hotels/${id}`, {
+          const response = await fetch(`https://api.asfaralrahhal.net/api/hotels/${id}`, {
             headers: {
               Authorization: `Bearer ${sessionStorage.getItem("token")}`,
             },
@@ -119,8 +119,8 @@ const HotelForm = ({ isEdit }) => {
     };
 
     const url = isEdit
-      ? `http://localhost:5000/api/hotels/${id}`
-      : "http://localhost:5000/api/hotels";
+      ? `https://api.asfaralrahhal.net/api/hotels/${id}`
+      : "https://api.asfaralrahhal.net/api/hotels";
 
     const method = isEdit ? "PUT" : "POST";
 

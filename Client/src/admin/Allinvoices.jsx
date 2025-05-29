@@ -7,7 +7,7 @@ const Allinvoices = () => {
     // Function to fetch invoices from the backend
     const fetchInvoices = async () => {
         try {
-            const response = await fetch("http://localhost:5000/api/invoices", {
+            const response = await fetch("https://api.asfaralrahhal.net/api/invoices", {
                 headers: {
                     Authorization: `Bearer ${sessionStorage.getItem("token")}`,
                 },
@@ -27,7 +27,7 @@ const Allinvoices = () => {
     // Function to update payment status
     const updatePaymentStatus = async () => {
         try {
-            const response = await fetch("http://localhost:5000/api/invoices/update-payment-status", {
+            const response = await fetch("https://api.asfaralrahhal.net/api/invoices/update-payment-status", {
                 headers: {
                     Authorization: `Bearer ${sessionStorage.getItem("token")}`,
                 },
@@ -77,7 +77,7 @@ const Allinvoices = () => {
                             <td>{invoice._id}</td>
                             <td>{invoice.customerName}</td>
                             <td>{invoice.email}</td>
-                            <td>{invoice.hotel?.hotelName}</td>
+                            <td>{invoice.hotel?.hotelName.ar}</td>
                             <td>{invoice.totalAmount}</td>
                             <td>{invoice.paymentStatus}</td>
                             <td>

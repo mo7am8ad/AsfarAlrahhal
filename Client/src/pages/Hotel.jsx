@@ -20,7 +20,7 @@ const Hotel = () => {
   useEffect(() => {
     const fetchHotel = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/hotels/${id}`);
+        const response = await fetch(`https://api.asfaralrahhal.net/api/hotels/${id}`);
         if (!response.ok) throw new Error("Failed to fetch hotel");
         const data = await response.json();
         setHotel(data);
