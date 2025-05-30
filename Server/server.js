@@ -21,7 +21,7 @@ app.use(cors({
   origin: [
     'https://www.asfaralrahhal.net',
     'https://asfaralrahhal.net',
-    'http://localhost:3000'  // For local dev
+    'http://localhost:5173'  // For local dev
   ],
   credentials: true
 }));
