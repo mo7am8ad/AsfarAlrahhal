@@ -1,5 +1,7 @@
 {
-  "NavbarHotels":"الفنادق",
+  "NavbarHome":"الرئيسية",
+  "NavbarPackages":"البكجات السياحية",
+  "NavbarHotels":"مكة و المدينة",
   "NavbarFlights":"الطيران",
   "NavbarTransportations":"المواصلات",
   "NavbarVisasAndInsurance":"التأشيرات والتأمينات",
@@ -20,6 +22,16 @@
   "HotelsTextAboveChoosingCity": "اختر مكان الإقامة:",
   "HotelsChooseButtonMakkah":"مكة المكرمة",
   "HotelsChooseButtonMadinah":"المدينة المنورة",
+  "HomeHeroHeader1":"مع أسفار الرحّال",
+  "HomeHeroHeader2":"احصل عل تجربة سفر لا تنسى",
+  "HomeHeroParagraph":"تواصل معنا وقم بتصميم بكج السياحة الخاص بك معنا واحصل على اجازة مثلى",
+  "HomeHeroButton":"تواصل معنا الآن",
+  "HomeOurServices":"خدماتنا",
+  "HomeOurServicesHotelReservation":"حجوزات فندقية",
+  "HomeOurServicesHotelsMakkahAndMadinah":"فنادق مكة والمدينة",
+  "":"",
+  "":"",
+  "":"",
 
 
   "FLightsHeader":"احجز تذكرة طيرانك مع أسفار الرحّال",

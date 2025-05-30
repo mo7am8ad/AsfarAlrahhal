@@ -22,6 +22,8 @@ import TermsOfUse from "../pages/TermOfUse.jsx";
 import PrivacyPolicy from "../pages/PrivacyPolicy.jsx";
 import ContactForm from "../pages/ContactForm.jsx";
 import VisasAndInsurance from "../pages/VisasAndInsurance.jsx";
+import Home from "../pages/Home.jsx";
+import Packages from "../pages/Packages.jsx";
 
 
 // Authentication check function
@@ -40,9 +42,11 @@ const Router = () => {
       <Layout>
         <Routes>
           {/* Public Routes */}
-          <Route path="/" element={<Navigate to="/hotels" replace />} />
+          <Route path="/" element={<Navigate to="/home" replace />} />
+          <Route path="/home" element={<Home/>}/>
           <Route path="/hotels" element={<Homepage />} />
           <Route path="/hotels/:id" element={<Hotel />} />
+          <Route path="/packages" element={<Packages/>}/>
           <Route path="/flights" element={<Flights />} />
           <Route path="/transportations" element={<Transportations />} />
           <Route path="/about-us" element={<AboutUS />} />

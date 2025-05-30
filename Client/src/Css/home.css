@@ -1,0 +1,68 @@
+.homeContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+  .HomeHeroSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 0px;
+
+  }
+    .HomeBackGround{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      background-image:url(../assets/HomeCover.png);
+      background-size: cover;
+      background-position: top;
+      padding: 0px ;
+    }
+      .HomeHeroSectionContentContianer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 12px;
+        width:100%;
+        padding: 25px 60px;
+        border-radius: 8px;
+      }
+        .HomeHeroSectionHeaderContainer h1{
+          font-size: 45px;
+          font-weight: 700;
+          line-height: 60px;
+          color:#083C5D;
+        }
+        .HomeHeroSectionParagraphContainer p{
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 50px;
+          color:#5B555C;
+        }
+        .HomeHeroSectionButtonContainer button{
+          width: 180px;
+          height: 55px;
+          border-radius: 12px;
+          font-size: 18px;
+          font-family: Rubik;
+          font-weight: 400;
+          text-align: center; 
+          transition:transform 0.1s ease;  
+        }
+        .HomeHeroSectionButtonContainer button:active{
+          background-color: #042d47;
+          transform: scale(0.98);
+        }
+
+
+  .HomeSecondSection{
+
+  }
+    .HomeSecondSectionContianer{
+      
+    }

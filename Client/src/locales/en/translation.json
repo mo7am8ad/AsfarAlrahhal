@@ -1,5 +1,7 @@
 {
-  "NavbarHotels":"Hotels",
+  "NavbarHome":"Home",
+  "NavbarPackages":"Packages",
+  "NavbarHotels":"Makkah&Madinah",
   "NavbarFlights":"Flights",
   "NavbarTransportations":"Transportations",
   "NavbarVisasAndInsurance":"Visas & Insurance",
@@ -18,6 +20,16 @@
   "HotelsTextAboveChoosingCity": "Where Are You Traveling to?",
   "HotelsChooseButtonMakkah":"Makkah",
   "HotelsChooseButtonMadinah":"Madinah",
+  "HomeHeroHeader1":"With Asfar Al-Rahhal",
+  "HomeHeroHeader2":"get an unforgettable travel experince",
+  "HomeHeroParagraph":"contact us and design your own travel package and get a unique experince",
+  "HomeHeroButton":"Contact us now",
+  "HomeOurServices":"Our Services",
+  "HomeOurServicesHotelReservation":"Hotel Reservation",
+  "HomeOurServicesHotelsMakkahAndMadinah":"Makkah & Madinah Hotels",
+  "":"",
+  "":"",
+  "":"",
 
 
 

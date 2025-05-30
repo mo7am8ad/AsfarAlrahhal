@@ -61,6 +61,20 @@ function Navbar() {
       </div>
 
       <ul className={`navbar-pages-list ${isNavDropdownOpen ? "show" : ""}`}>
+      <NavLink to="/home" onClick={() => setIsNavDropdownOpen(false)}>
+          <li
+            className={`navbar-tab ${activeTab === "/home" ? "active" : ""}`}
+          >
+            {t("NavbarHome")}
+          </li>
+        </NavLink>
+        <NavLink to="/packages" onClick={() => setIsNavDropdownOpen(false)}>
+          <li
+            className={`navbar-tab ${activeTab === "/packages" ? "active" : ""}`}
+          >
+            {t("NavbarPackages")}
+          </li>
+        </NavLink>
         <NavLink to="/hotels" onClick={() => setIsNavDropdownOpen(false)}>
           <li
             className={`navbar-tab ${activeTab === "/hotels" ? "active" : ""}`}

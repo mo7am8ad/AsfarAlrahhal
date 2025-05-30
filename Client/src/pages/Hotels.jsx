@@ -46,14 +46,14 @@ const Hotels = () => {
   return (
     <div className="HotelsPageContainer">
       <div className="HotelsPageUpperSection">
-        <div className="HotelsPageUpperSectionDescriptionPart">
+        {/*<div className="HotelsPageUpperSectionDescriptionPart">
           <div className="HotelsPageUpperSectionDescriptionPartHeaderContainer">
             <h1>{t('HotelsHeader')}</h1>
           </div>
           <div className="HotelsPageUpperSectionDescriptionPartParagraphContainer">
             <p>{t('HotelsPargraph')}</p>
           </div>
-        </div>
+        </div>*/}
         <div className="HotelsPageUpperSectionChooseCityPart">
           <div className="HotelsPageUpperSectionChooseCityPartPargraphContainer">
             <p>{t('HotelsTextAboveChoosingCity')}</p>
